@@ -8,12 +8,22 @@
     <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
 </head>
 <body>
-    <script type="module">
-    import $ from 'jquery';
-    $(function(){
-        console.log(location);
-        $("#includedContent").load("pages/projects.html"); 
-    });
-    </script>
+    <div class="sidenavwrapper">
+        <div class="sidenav">
+            <a href="#projects">Projects</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div class="sidenavtab"></div>
+    </div>
+    <div class="top-bar">
+        <div class="name-title">
+            Gabriel Bacon
+        </div>
+    </div>
+    <script type="module" src="./src/main.ts"></script>
+    <div>
+
+    </div>
 </body>
 </html>
