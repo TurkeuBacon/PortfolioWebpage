@@ -4,42 +4,55 @@ body {
 }
 html {
     scroll-behavior: smooth;
-    font-family: consolas;
+    font-family: Consolas,"courier new";
 }
 
-.topnav {
-    background-color: #163363;
-    overflow: hidden;
+.sidenavtab {
+    width: 50px;
+    height: 100%;
     position: fixed;
+    border-radius: 0px 20px 20px 0px;
+    top: 0px;
+    left: 250px;
+    background-color: #002a6d;
+    float: inline-start;
+}
+
+.sidenavwrapper {
+    height: 100%;
+}
+
+.sidenav {
+    width: 250px;
+    height: 100%;
+    position: fixed;
+    padding-top: 32px;
+    z-index: 1;
     top: 0px;
     left: 0px;
-    width: 100%;
-    height: 50px;
-    align-content: center;
-    z-index: 2;
+    overflow-x: hidden;
+    background-color: #1965df;
 }
 
-
-.topnav a {
-    float: inline-start;
-    color: #f2f2f2;
-    text-align: center;
-    align-content: center;
-    padding-left: 20px;
-    padding-right: 20px;
+.sidenav a {
+    padding: 32px 32px;
+    text-align: right;
     text-decoration: none;
-    font-size: large;
-    height: 100%;
+    font-size: 35px;
+    color: #000000;
+    border-radius: 0px 10px 10px 0px;
+    background-color: #1965df;
+    display: block;
 }
   
 /* Change the color of links on hover */
-.topnav a:hover {
+.sidenav a:hover {
     background-color: #ddd;
     color: black;
 }
   
 /* Add a color to the active/current link */
-.topnav a.active {
+.sidenav a.active {
     background-color: #1b839e;
     color: white;
 }
