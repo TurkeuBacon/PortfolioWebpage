@@ -1,38 +1,33 @@
 body {
     margin-top: 50px;
-    background-color: #2a4883;
+    background-color: #4a4f55;
 }
 html {
     scroll-behavior: smooth;
     font-family: Consolas,"courier new";
 }
 
-.sidenavwrapper {
+.sidenav-wrapper {
     height: 100%;
     z-index: 10;
     top: 0px;
     left: 0px;
-    position: absolute;
+    position: fixed;
 }
-.sidenavtab {
+.sidenav-tab {
     width: 50px;
     height: 100%;
-    border-radius: 0px 20px 20px 0px;
+    border-radius: 0px 40px 40px 0px;
     top: 0px;
     left: 0px;
     z-index: inherit;
     position: absolute;
-    background-color: #002a6d;
-    float: inline-start;
+    background-color: #1d2f4d;
     align-content: center;
 }
-.sidenav-tab-text {
-    writing-mode: vertical-rl;
-    text-orientation: upright;
-    font-weight: bold;
-    margin: auto;
-    font-size: 32px;
-    text-align: center;
+.sidenav-tab-icon {
+    width: 80%;
+    padding: 10%;
 }
 .sidenav {
     width: 250px;
@@ -43,16 +38,15 @@ html {
     top: 0px;
     left: -250px;
     overflow-x: hidden;
-    background-color: #1965df;
+    background-color: #4e6180;
 }
 .sidenav a {
     padding: 32px 32px;
     text-align: right;
     text-decoration: none;
     font-size: 35px;
-    color: #000000;
+    color: #ffffff;
     border-radius: 0px 10px 10px 0px;
-    background-color: #1965df;
     display: block;
 }
 /* Change the color of links on hover */
@@ -62,43 +56,56 @@ html {
 }
 /* Add a color to the active/current link */
 .sidenav a.active {
-    background-color: #1b839e;
-    color: white;
+    background-color: #98b9c9;
+    color: rgb(0, 0, 0);
 }
 
 
 .top-bar {
-    position: absolute;
+    position: fixed;
     top: 0px;
     left: 0px;
     width: 100%;
-    height: 100px;
+    height: 5.5vw;
     border-radius: 0px 0px 32px 0px;
-    background-color: rgb(83, 52, 83);
+    background-color: rgb(125, 151, 185);
     z-index: 1;
     display: flex;
 }
 .top-bar div {
     float:inline-start
 }
-.name-title {
-    font-size: 80px;
-    font-weight: bold;
+.name-title-bubble {
     width: fit-content;
     height: 100%;
     z-index: inherit;
-    background-color: rgb(175, 112, 175);
+    background-color: rgb(88, 123, 168);
     border-radius: 0px 0px 32px 0px;
     padding: 0px 64px 0px 89px;
+    overflow-y: hidden;
+    display: flex;
 }
-.profession-title {
-    font-size: 64px;
+.name-title-text {
+    font-size: 4vw;
+    font-weight: bold;
+    margin: 0px;
+    align-self: flex-end;
+    color: #ffffff;
+}
+.profession-title-bubble {
+    width: fit-content;
+    height: 100%;
+    z-index: inherit;
+    padding: 0px 32px 0px 32px;
+    overflow-y: hidden;
+    display: flex;
+}
+.profession-title-text {
+    font-size: 3vw;
     font-style: italic;
     font-weight: bold;
-    width: fit-content;
+    margin: 0px;
     align-self: flex-end;
-    z-index: inherit;
-    margin-left: 16px;
-    margin-top: auto;
-    margin-bottom: auto;
+    padding-bottom: 8px;
+    color: #000000;
 }
