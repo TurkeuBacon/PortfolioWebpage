@@ -7,27 +7,37 @@ html {
     font-family: Consolas,"courier new";
 }
 
+.sidenavwrapper {
+    height: 100%;
+    z-index: 10;
+    top: 0px;
+    left: 0px;
+    position: absolute;
+}
 .sidenavtab {
     width: 50px;
     height: 100%;
-    position: fixed;
     border-radius: 0px 20px 20px 0px;
     top: 0px;
     left: 0px;
     z-index: inherit;
+    position: absolute;
     background-color: #002a6d;
     float: inline-start;
+    align-content: center;
 }
-
-.sidenavwrapper {
-    height: 100%;
-    z-index: 10;
+.sidenav-tab-text {
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-weight: bold;
+    margin: auto;
+    font-size: 32px;
+    text-align: center;
 }
-
 .sidenav {
     width: 250px;
     height: 100%;
-    position: fixed;
+    position: absolute;
     padding-top: 32px;
     z-index: inherit;
     top: 0px;
@@ -35,7 +45,6 @@ html {
     overflow-x: hidden;
     background-color: #1965df;
 }
-
 .sidenav a {
     padding: 32px 32px;
     text-align: right;
@@ -46,38 +55,50 @@ html {
     background-color: #1965df;
     display: block;
 }
-  
 /* Change the color of links on hover */
 .sidenav a:hover {
     background-color: #ddd;
     color: black;
 }
-  
 /* Add a color to the active/current link */
 .sidenav a.active {
     background-color: #1b839e;
     color: white;
 }
 
+
 .top-bar {
-    position: fixed;
+    position: absolute;
     top: 0px;
     left: 0px;
     width: 100%;
+    height: 100px;
     border-radius: 0px 0px 32px 0px;
     background-color: rgb(83, 52, 83);
-    /* border-bottom: #000000 4px solid;
-    border-right: #000000 4px solid; */
+    z-index: 1;
+    display: flex;
 }
-
+.top-bar div {
+    float:inline-start
+}
 .name-title {
-    font-size: 64px;
-    font-style: normal;
+    font-size: 80px;
+    font-weight: bold;
     width: fit-content;
+    height: 100%;
+    z-index: inherit;
     background-color: rgb(175, 112, 175);
     border-radius: 0px 0px 32px 0px;
-    padding: 16px 64px 16px 114px;
-    /* border-bottom: #000000 4px solid;
-    border-right: #000000 4px solid; */
-    z-index: 1;
+    padding: 0px 64px 0px 89px;
+}
+.profession-title {
+    font-size: 64px;
+    font-style: italic;
+    font-weight: bold;
+    width: fit-content;
+    align-self: flex-end;
+    z-index: inherit;
+    margin-left: 16px;
+    margin-top: auto;
+    margin-bottom: auto;
 }

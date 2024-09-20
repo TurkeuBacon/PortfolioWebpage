@@ -8,14 +8,14 @@ $(function() {
 });
 
 function onNavEnter() {
-    $(".sidenavwrapper").children(".sidenav").animate({left:'0px'},750);
-    $(".sidenavwrapper").children(".sidenavtab").animate({left:'250px'},750, ()=>{
+    $(".sidenavwrapper").animate({left:'250px'},750, ()=>{
+        $(".sidenavwrapper").children(".sidenavtab").children("p").text("< NAVIGATION <");
         $(".sidenavwrapper").one("mouseenter", onNavEnter);
     });
 }
 function onNavExit() {
-    $(".sidenavwrapper").children(".sidenav").animate({left:'-250px'},750);
-    $(".sidenavwrapper").children(".sidenavtab").animate({left:'0px'},750, ()=>{
+    $(".sidenavwrapper").animate({left:'0px'},750, ()=>{
+        $(".sidenavwrapper").children(".sidenavtab").children("p").text("> NAVIGATION >");
         $(".sidenavwrapper").one("mouseleave", onNavExit);
     });
 }
