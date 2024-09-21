@@ -5,7 +5,7 @@ class PageSubs {
         if(jbody.find("#SideNav").length > 0) {
             return false;
         } else {
-            const sidenavHtml = "<div id=\"SideNav\" class=\"sidenav-wrapper\"><div class=\"sidenav\"><a href=\"#projects\" class=\"active\">Projects</a><a href=\"#about\">About</a><a href=\"#contact\">Contact</a></div><div class=\"sidenav-tab\"><img class=\"sidenav-tab-icon\" src=\"./assets/images/menuIcon.png\"/></div></div>";
+            const sidenavHtml = "<div id=\"SideNav\" class=\"sidenav-wrapper\"><div class=\"sidenav\"><a href=\"#projects\" class=\"active\">Projects</a><a href=\"#about\">About</a><a href=\"#contact\">Contact</a></div><div class=\"sidenav-tab\"><img class=\"sidenav-tab-icon\" src=\"/assets/images/menuIcon.png\"/></div></div>";
             jbody.prepend(sidenavHtml);
             const jsideNav = jbody.find("#SideNav");
             jsideNav.one("mouseenter", onNavEnter);
