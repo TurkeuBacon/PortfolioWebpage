@@ -7,6 +7,16 @@ html {
     font-family: Consolas,"courier new";
 }
 
+.main-content {
+    font-size: 3vw;
+    font-style: italic;
+    font-weight: bold;
+    margin: 0px;
+    align-self: flex-end;
+    padding-bottom: 8px;
+    color: #000000;
+}
+
 .sidenav-wrapper {
     height: 100%;
     z-index: 10;
