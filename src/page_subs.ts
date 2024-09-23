@@ -2,14 +2,14 @@ import $ from 'jquery';
 class PageSubs {
     static loadBasePageElements(body: HTMLBodyElement): void {
         const jbody = $(body);
-        $.get('/html_templates/sidenav.html', (data) => {
+        $.get(jbody.find("#SidenavLink").attr("href")!, (data) => {
             jbody.prepend(data);
             const jsidenav = jbody.find("#SideNav");
             console.log(jsidenav);
             jsidenav.one("mouseenter", onNavEnter);
             jsidenav.one("mouseleave", onNavExit);
         });
-        $.get('/html_templates/topbar.html', (data) => {
+        $.get(jbody.find("#TopBarLink").attr("href")!, (data) => {
             jbody.prepend(data);
         });
     }
